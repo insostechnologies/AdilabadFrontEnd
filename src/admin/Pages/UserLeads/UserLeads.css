@@ -1,0 +1,89 @@
+.chart-container {
+    max-width: 100%;
+    /* Adjust based on your layout */
+
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    white-space: nowrap;
+    /* Prevent wrapping of the chart */
+}
+
+.date-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.date-input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.date-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.no-data {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+    padding: 40px 0;
+}
+
+.chart-table-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.chart-table-item {
+    flex: 1;
+    min-width: 45%;
+    /* Ensures that both items are roughly half of the container on large screens */
+    margin: 10px;
+}
+
+/* Mobile layout: stack items vertically */
+@media (max-width: 768px) {
+    .chart-table-item {
+        flex: 1 0 100%;
+        /* On small screens, each item takes up full width */
+        min-width: 100%;
+    }
+}
+
+.type-filter {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.type-filter h5 {
+    margin: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.type-filter-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.type-filter-item input {
+    margin: 18px;
+}
+
+.no-data {
+    text-align: center;
+    padding: 20px;
+    color: #999;
+    font-size: 18px;
+}

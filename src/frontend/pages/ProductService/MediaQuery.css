@@ -1,0 +1,115 @@
+/* Desktop screen */
+@media all and (min-width: 768px) {
+  .product-service{
+    margin-top: 70px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #fff8f8, #fff);
+  }
+
+  .product-header{
+    display: none;
+  }
+
+  .store-title {
+    padding: 20px 0;
+    margin-left: 40px;
+    gap: 20px;
+  }
+  .store-title img {
+    width: 3em;
+  }
+  .product-service .store-title h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+
+  .product-types-btn {
+    gap: 15px;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+  .product-service .product-types-btn button {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 7px 23px;
+  }
+  .product-types-btn .btn-on:hover {
+    background: white;
+    color: red;
+  }
+  .product-types-btn .btn-off:hover {
+    background: #000;
+    color: white;
+  }
+
+  .product-service-lists-desktop-screen {
+    display: flex;
+    gap: 30px;
+    margin-left: 20px;
+    margin-left: 20px;
+  }
+
+  .product-service-lists-desktop-screen .cards-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .product-service-lists-desktop-screen .review {
+    flex: 1;
+    margin: 20px;
+    align-self: flex-start;
+    position: sticky;
+  }
+
+  .star-icon {
+    cursor: pointer;
+  }
+
+  .product-service .notification-admin {
+    width: 67%;
+    background-color: #ccc;
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    padding: 20px 15px;
+    position: relative;
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+
+  .product-service .body-product-service {
+    margin-top: 0px;
+}
+
+  .product-service .product-header,
+  .body-product-service {
+    display: none;
+  }
+
+  .product-service-lists {
+    display: none;
+  }
+}
+
+/* mobile screen */
+@media (max-width: 767px) {
+  .product-service-lists-desktop-screen {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .product-service .product-header h3 {
+    font-size: 15px;
+}
+  .product-service .product-header .icons {
+    font-size: 1.2em;
+}
+  .star-icon {
+    margin: 7px;
+    font-size: 1.5em;
+}
+}

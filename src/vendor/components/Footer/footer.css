@@ -1,0 +1,11 @@
+.bottom-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.heart-icon{
+    color: red;
+    font-size: 20px;
+    margin: 0px 10px 0px 10px;
+}

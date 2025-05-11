@@ -1,0 +1,39 @@
+.date-filter {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    flex-wrap: wrap;
+}
+
+.date-filter input {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.date-filter input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.date-filter .clear-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.date-filter .clear-btn:hover {
+    background-color: #c82333;
+}

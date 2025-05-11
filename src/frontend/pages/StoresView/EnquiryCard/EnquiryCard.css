@@ -1,0 +1,45 @@
+.enquiry-card{
+    width: 100%;
+    margin: 10px 0px 25px 0px;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+}
+.enquiry-card .card{
+    margin: 10px;
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    border: none;
+    align-items: start;
+    border-radius: 15px;
+    background-color: #fff7f8;
+}
+.enquiry-card .card form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.enquiry-card .card form .input-area{
+    width: 100%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    outline: none;
+    border-radius: 8px;
+    border: 2px solid #EE2E31;
+}
+.enquiry-card .card form button{
+    padding: 10px 50px;
+    margin: 10px 0;
+    outline: none;
+    border: 0;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 8px;
+    background: #EE2E31;
+}
+/* 
+.Toastify__toast-container.Toastify__toast-container--top-center{
+    top: 50px
+} */

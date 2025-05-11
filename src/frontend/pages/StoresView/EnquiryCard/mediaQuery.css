@@ -1,0 +1,14 @@
+/* desktop screen */
+@media (min-width: 768px) {
+  .enquiry-card {
+    width: 95%;
+    margin-top: 85px;
+  }
+  .enquiry-card .card {
+    margin: 0 15px;
+  }
+  .enquiry-card .card form button:hover {
+    background: #f25356;
+    cursor: pointer;
+  }
+}

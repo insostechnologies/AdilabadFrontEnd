@@ -1,0 +1,17 @@
+.img{
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    border-radius: 100%;
+}
+.category_icon{
+    height: 50px;
+    width: 50px;
+    font-size: contain;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: #F4C095;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

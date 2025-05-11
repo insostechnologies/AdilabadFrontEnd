@@ -1,0 +1,32 @@
+.home-banner7-container .title{
+    margin-top: 35px;
+    margin-bottom: -25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.home-banner7-container{
+    padding: 0px 10px 0px 10px;
+
+}
+
+.home-banner7-inner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 18px;
+}
+
+.Home-banner7 {
+    width: 100%;
+    height: 210px;
+}
+
+.Home-banner7 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}

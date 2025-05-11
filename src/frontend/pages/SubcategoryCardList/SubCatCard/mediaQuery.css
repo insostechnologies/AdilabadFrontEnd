@@ -1,0 +1,47 @@
+/* Desktop styles */
+@media all and (min-width: 768px) {
+  .Sub-Cat-Card {
+    width: auto;
+    height: 23vh;
+    margin: 20px;
+    border-radius: 25px;
+    transition: transform 0.3s;
+    box-shadow: 0 5px 10px rgba(196, 196, 196, 0.863);
+    overflow: hidden;
+  }
+
+  .Sub-Cat-Card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  .Sub-Cat-Card img {
+    border-radius: 25px;
+    object-fit: contain !important;
+  }
+
+  .Sub-Cat-Card .detail {
+    border-radius: 10px;
+    margin-bottom: -7px;
+    margin-left: 0px;
+    width: auto;
+    align-items: center;
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+  
+  .Sub-Cat-Card .title_detail {
+    width: auto;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    color: #fff;
+  }
+ 
+  .Sub-Cat-Card .detail .title {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px 0;
+    padding-left: 6.5px;
+  }
+}

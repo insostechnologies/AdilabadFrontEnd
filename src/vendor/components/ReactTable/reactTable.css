@@ -1,0 +1,28 @@
+.data_table table {
+    border: none;
+    padding: 20px;
+}
+
+.data_table table th {
+    font-size: 18px;
+}
+
+.MuiTableCell-head {
+    line-height: 25px !important;
+}
+
+.data_table table td {
+    font-size: 15px;
+}
+
+/* reactTable.css */
+
+.data_table {
+    /* Ensure text is selectable */
+    user-select: text;
+}
+
+.data_table * {
+    /* Ensure all child elements have selectable text */
+    user-select: text;
+}

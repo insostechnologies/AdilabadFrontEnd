@@ -1,0 +1,12 @@
+.react-datepicker__input-container input {
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+tr:has(.highlighted-row) {
+    background-color: #f5f5a9 !important;
+    /* Light yellow */
+    border: 5px solid #ffc107 !important;
+    /* Gold border */
+}

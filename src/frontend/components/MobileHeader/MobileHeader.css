@@ -1,0 +1,37 @@
+.mob_header {
+  background: #ee2e31;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  justify-content: space-between;
+  padding: 11px;
+  height: 61px;
+}
+.mob_header img {
+  cursor: pointer;
+  width: 1.5em;
+}
+
+.header-left {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.header-left .header-left-title {
+  color: #fff;
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0px;
+}
+
+/* for desktop */
+@media (min-width: 768px) {
+  .mob_header {
+    display: none;
+  }
+}

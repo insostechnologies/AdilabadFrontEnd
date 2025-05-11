@@ -1,0 +1,477 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff5f6;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.159);
+  margin: 10px 15px;
+  border-radius: 15px;
+  width: -webkit-fill-available;
+  padding: 10px;
+
+}
+
+.upper-box {
+  display: flex;
+  flex-direction: row;
+  /* gap: 11px;
+  margin-bottom: 5px; */
+  justify-content: left;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.image-box {
+  flex-basis: 45%;
+  position: relative;
+  margin-right: 5px;
+}
+
+.image-box div {
+  height: 135px;
+  width: 135px;
+  box-shadow: 0 3px 5px rgba(167, 167, 167, 0.356);
+  border-radius: 17px;
+}
+
+.image-box img {
+  height: 100%;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  object-fit: cover;
+}
+
+.image-box .images-count {
+  position: absolute;
+  font-size: 10px;
+  top: 8px;
+  left: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0px 10px 0px 10px;
+  color: white;
+  border-radius: 25px;
+}
+
+/* .image-box .pt-icon , .pt-icon2{
+  position: absolute;
+  font-size: 16px;
+  top: 10px;
+  right: 30px;
+}
+.image-box .pt-icon2{
+  top: 35px;
+} */
+.product-details {
+  padding: 0px;
+}
+
+.product-details h5 {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.offer-price {
+  color: red;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.offer-price span {
+  font-size: 0.6em;
+}
+
+.original-price {
+  font-weight: 400;
+  font-size: 0.9em;
+  margin-bottom: 1px;
+}
+
+.original-price span {
+  text-decoration: line-through;
+}
+
+.tax-charger {
+  font-size: 10px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.cart-options {
+  display: flex;
+  align-items: center;
+  gap: 11.5px;
+}
+
+.cart-options .out-of {
+  font-size: 12px;
+  color: #3d3d3d;
+  font-style: italic;
+}
+
+.cart-options button {
+  padding: 5px 8px;
+  background: red;
+  font-size: 10px;
+  color: #fff;
+  outline: none;
+  border: 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.product-card .cart-change {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card .cart-change .cart-quantity {
+  background: #fff;
+  z-index: 1;
+  border-radius: 50%;
+  width: 5px;
+  height: 10px;
+  color: red;
+  outline: none;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-change span {
+  width: 30px;
+  height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: red; */
+  /* background: red; */
+  color: black;
+  margin: 0 -10px;
+  font-size: 10px;
+}
+
+.enquired-text {
+  font-weight: 400;
+  color: #484848;
+  margin-top: 3px;
+  font-size: 10px;
+}
+
+.enquired-icon {
+  color: #005bec;
+  height: 16px;
+  width: 16px;
+}
+
+.lower-box-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rows-action {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lower-box-inner .rows-action button {
+  background: #fff;
+  outline: 1px solid rgba(0, 0, 0, 0.5);
+  color: #363636;
+  padding: 3px 8px;
+  /* font-weight: 700; */
+  font-size: 10px;
+  border-radius: 20px;
+}
+
+.lower-box-inner .rows-action p {
+  font-size: 0.7em;
+  margin-bottom: 0px;
+}
+
+.call-svg {
+  color: blue;
+}
+
+.chat-svg {
+  color: #03da03;
+}
+
+.product-des {
+  font-size: 9px;
+  color: #000;
+  margin-bottom: 1px;
+  height: 27px;
+  overflow-y: scroll;
+}
+
+.product-des::-webkit-scrollbar {
+  width: 7px !important;
+}
+
+.product-des::-webkit-scrollbar-thumb {
+  background-color: #ffc2c2 !important;
+  border-radius: 8px !important;
+}
+
+.product-des::-webkit-scrollbar-thumb:hover {
+  background-color: #ffa1a1 !important;
+}
+
+.product-des::-webkit-scrollbar-track {
+  background-color: #fffcbb !important;
+  border-radius: 10px !important;
+}
+
+/* send query modal */
+.modal-title-custom {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.input-area-custom {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  outline: none;
+  border-radius: 8px;
+  border: 2px solid #EE2E31;
+  font-size: 1rem;
+}
+
+.submit-button-custom {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #EE2E31;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.submit-button-custom:hover {
+  background-color: #d02528;
+}
+
+textarea.input-area-custom {
+  resize: none;
+}
+
+.product-details h5 {
+  max-width: 150px;
+  min-width: min-content;
+  font-size: 15px !important;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h3 {
+  margin-top: 0;
+}
+
+.modal-content ul {
+  list-style: none;
+  padding: 0;
+  width: 100% !important;
+}
+
+.modal-content li {
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  width: 100% !important;
+}
+
+.modal-content li:hover {
+  background: #f0f0f0;
+}
+
+.modal-content button {
+  margin-top: 10px;
+  width: -webkit-fill-available !important;
+}
+
+/* Base style for the button */
+.out-of-stock {
+  background-color: #f44336;
+  /* Red background for Out of Stock */
+  color: #fff;
+  /* White text */
+  padding: 10px 20px;
+  /* Padding for a comfortable click area */
+  border: none;
+  /* Remove default border */
+  border-radius: 5px;
+  /* Rounded corners */
+  font-size: 16px;
+  /* Font size */
+  cursor: pointer;
+  /* Pointer cursor for active buttons */
+  transition: opacity 0.3s ease;
+  /* Smooth transition for dimming */
+}
+
+/* Disabled state */
+.out-of-stock:disabled {
+  background-color: #888888;
+  /* Light gray background for disabled button */
+  color: #ffffff;
+  /* Darker gray text for readability */
+  cursor: not-allowed;
+  /* Change cursor to indicate non-clickable state */
+  opacity: 0.6;
+  /* Dim the button */
+}
+
+/* Optional: Add hover effect for enabled buttons */
+.out-of-stock:not(:disabled):hover {
+  opacity: 0.9;
+  /* Slight dimming on hover */
+}
+
+.in-stock {
+  padding: 10px 20px;
+  /* Padding for a comfortable click area */
+  border: none;
+  /* Remove default border */
+  border-radius: 5px;
+  /* Rounded corners */
+  font-size: 16px;
+  /* Font size */
+  cursor: pointer;
+  /* Pointer cursor for active buttons */
+  transition: opacity 0.3s ease;
+  /* Smooth transition for dimming */
+}
+
+.cart-change span {
+  font-size: 12px;
+  font-weight: 700px;
+  height: fit-content;
+  font-family: sans-serif;
+  transition: transform 0.5s ease;
+  /* Smooth transition for animation */
+}
+
+.cart-change {
+  width: 100px;
+}
+
+.product-card .cart-change .cart-quantity {
+  font-weight: 700;
+  font-size: 20px;
+  border: 3px solid red;
+}
+
+.add {
+  border: 3px solid darkgreen !important;
+  color: green !important;
+}
+
+
+/* Base styling for the quantity */
+.qBx {
+  overflow: hidden;
+  /* width: ; */
+  /* background-color: #000; */
+  width: 20px;
+  margin: 0px 0px 0px 8px;
+
+  /* ba */
+}
+
+/* Scroll animation class */
+.scroll-animate {
+  animation: scrollUp 0.5s ease-out;
+}
+
+/* Keyframes for the scroll-up effect */
+@keyframes scrollUp {
+  0% {
+    transform: translateY(20px);
+    /* Start below */
+    opacity: 0.5;
+    /* Semi-transparent */
+  }
+
+  50% {
+    transform: translateY(-10px);
+    /* Move upward */
+    opacity: 1;
+    /* Fully visible */
+  }
+
+  100% {
+    transform: translateY(0);
+    /* Settle in place */
+  }
+}
+
+.modal-header {
+  display: contents !important;
+}
+
+.modal-header .btn-close {
+  position: absolute;
+  right: 15px !important;
+  top: 15px !important;
+  border: 1px solid red;
+  height: 10px !important;
+  width: 10px !important;
+  padding: 10px;
+  z-index: 10000000;
+  background-color: #ccc;
+  color: red;
+
+}
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.slider-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}

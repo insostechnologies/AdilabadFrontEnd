@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@300;400;500;600;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+input:checked+.slider {
+  width: 60px;
+}
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  /* figma-color */
+  --white-color: #fff;
+  --red-color: #EE2E31;
+  --gold-color: #ffc501;
+  --gray-color: #2e3137;
+  --black-color: #000;
+  /* custom-color */
+  --bg-color: #edf2f7;
+  --light-red-color: #e54141;
+  --morelighter-red-color: #e95757;
+  --transperant-red-color: #e9575720;
+  --morelight-yellow-color: #ffffdf;
+  --light-yellow-color: #e8d873;
+  --dark-yellow-color: #dfcd02;
+  --yellow-color: #e4cb2e;
+  --orange-color: #ffae00;
+  --green-color: #00ff6a;
+  --transperant-white: #ffffff4a;
+  --morelight-gray-color: #e5dfdf;
+  --light-gray-color: #d3c5c5;
+  --medium-gray-color: #888;
+  --dark-gray-color: #444;
+  --moredark-gray-color: #313030;
+  --shadow: #0000004d;
+}
+
+a,
+button {
+  all: unset;
+  text-decoration: none !important;
+}
+
+input {
+  border: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* For Chrome, Safari, Edge, and Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* ::-webkit-scrollbar{
+	width: 10px;
+}
+
+::-webkit-scrollbar-track-piece{
+	background-color: #FFF;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: #CBCBCB;
+	outline: 2px solid #FFF;
+	outline-offset: -2px;
+	border: .1px solid #B7B7B7;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background-color: #909090;
+} */
+
+form fieldset {
+  background-color: #f1f1f1;
+  padding: 15px !important;
+}
+
+form fieldset input {
+  background-color: #ffff !important;
+  outline: 1px solid #198754 !important;
+}
+
+form fieldset textarea {
+  background-color: #ffff !important;
+  outline: 1px solid #198754 !important;
+}
+
+form fieldset .custom-selected-item {
+  background-color: #ffff !important;
+  outline: 1px solid #198754 !important;
+}
+
+.radio-buttons input {
+  outline: none !important;
+}
+
+.radio-buttons {
+  flex-wrap: wrap !important;
+}
+

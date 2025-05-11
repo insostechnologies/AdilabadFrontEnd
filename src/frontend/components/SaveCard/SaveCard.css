@@ -1,0 +1,83 @@
+.saved.save-history{
+    padding: 0px 10px 0px 10px;
+}
+.details p{
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.details h5{
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.title{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title .save-til{
+    margin-bottom: 10px;
+}
+
+.title .see-more{
+    color: #29ec4d;
+}
+.title .heart-icon{
+    color: red;
+}
+.save-list{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.saved-box{
+    background: #f9dac0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: fit-content;
+    margin: 0 10px 0 0;
+    padding: 10px 15px;
+    gap: 10px;
+}
+.saved-box img{
+    width: 2em;
+    height: 2em;
+    object-fit: cover;
+}
+.saved-box p{
+    font-size: 0.8em;
+}
+
+.pf-dts{
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.pf-dts .name{
+    font-size: 0.8em;
+    font-weight: 700;
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+
+}
+.pf-dts .details{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.saved-box h5{
+    font-size: 10px;
+    display: -webkit-box;
+	-webkit-line-clamp: 1; /* Number of lines to show */
+	-webkit-box-orient: vertical;
+	overflow: hidden; /* Hide the overflowed text */
+	text-overflow: ellipsis; /* Add ellipsis (...) */
+    max-width: 120px;
+}

@@ -1,0 +1,33 @@
+.chart-container {
+    max-width: 100%; /* Adjust based on your layout */
+
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping of the chart */
+}
+
+.date-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.date-input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.date-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.no-data {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+    padding: 40px 0;
+}

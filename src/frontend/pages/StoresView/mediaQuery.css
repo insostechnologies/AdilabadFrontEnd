@@ -1,0 +1,43 @@
+/* desktop screen */
+@media (min-width: 768px) {
+  .sub-category-desktop-only {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to bottom, #fff8f8, #fff);
+  }
+
+  .search {
+    background: linear-gradient(to bottom, #fff8f8, #fff8f8);
+  }
+
+  .card1-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* margin-right: 20px; */
+    /* align-items: center; */
+  }
+
+  .sub-category-desktop-only .enquiry-card-container {
+    flex: 0 0 400px;
+    top: 0;
+    position: sticky !important;
+    align-self: flex-start;
+  }
+
+  .card1-container,
+  .enquiry-card-container {
+    margin-bottom: 20px;
+  }
+
+  .sub-category {
+    display: none;
+  }
+}
+
+/* mobile screen */
+@media (max-width: 767px) {
+  .sub-category-desktop-only {
+    display: none;
+  }
+}

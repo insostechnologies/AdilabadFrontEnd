@@ -1,0 +1,124 @@
+/* desktop screen */
+@media (min-width: 768px) {
+  .card-1 {
+    background-color: #fefefe;
+    border: 1px solid lightgray;
+    margin-left: 35px;
+    margin-bottom: 35px;
+    padding: 0px;
+    width: 75%;
+    box-shadow: 0 3px 10px rgba(88, 88, 88, 0.134);
+    /* height: auto;
+    width: auto; */
+    height: 300px;
+    /* max-width: 700px; */
+  }
+
+  .store-card {
+    padding: 0px;
+    margin-bottom: 15px;
+    height: 200px;
+    background: linear-gradient(to bottom, #fffafa, #fff);
+    position: relative;
+    z-index: 1;
+    height: inherit;
+  }
+
+  .store-image {
+    flex-basis: 35%;
+    height: 80%;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin: 20px;
+  }
+
+  .store-infos {
+    margin: 15px 0 auto 0;
+    padding-left: 8px;
+  }
+
+  .store-name {
+    font-size: 1.2rem !important;
+  }
+
+  .store-location {
+    font-size: 0.7rem !important;
+    margin-bottom: 5px !important;
+  }
+
+  .view-details-btn {
+    padding: 5px 15px;
+    margin-top: 15px;
+    font-size: 1rem;
+    max-width: 250px;
+  }
+
+  .card-1 .card-details {
+    height: 50px;
+    padding: 0 8px;
+    background-color: #ffdede;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .card-style1,
+  .card-style2 {
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    top: -85px;
+    right: -85px;
+    background: linear-gradient(to bottom, #ffd9d9, #fff);
+    filter: drop-shadow(1px 1px 10px rgb(236, 236, 236));
+    z-index: -2;
+    border-radius: 50%;
+  }
+
+  .card-style2 {
+    height: 162px;
+    width: 162px;
+    top: -65px;
+    right: -65px;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-style1 {
+    display: none;
+  }
+}
+
+/*small mobile */
+/* @media (max-width: 430px) {
+  .store-infos {
+    width: 192px;
+}
+.store-name, .store-location, .store-location , .view-details-btn {
+  width: 160px  !important;
+  background-color: red;
+}
+} */
+@media (min-width: 320px) {
+  .store-infos {
+    padding-right: 5px;
+  }
+  .store-name {
+    font-size: 0.8em;
+  }
+
+  .store-location {
+    font-size: 9px;
+    margin-bottom: 2px;
+  }
+  .store-rating {
+    margin-bottom: 5px;
+  }
+  .open-close {
+    bottom: 38px;
+    right: 2px;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 8px;
+  }
+}

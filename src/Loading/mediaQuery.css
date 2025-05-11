@@ -1,0 +1,12 @@
+/* mobile screen */
+@media (max-width: 425px) {
+  .loading-circle {
+    width: 80px;
+    height: 80px;
+    border: 3.5px solid #fff;
+  }
+
+  .loading-text {
+    font-size: 12px;
+  }
+}

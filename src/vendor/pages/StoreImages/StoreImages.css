@@ -1,0 +1,28 @@
+.react-tabs__tab {
+    font-size: 20px;
+    padding: 20px;
+}
+
+.react-tabs__tab-list {
+    margin-top: 20px;
+}
+
+@media (max-width: 740px) {
+
+    .react-tabs__tab-list {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px !important;
+    }
+
+    .react-tabs__tab {
+        padding: 10px;
+    }
+
+    .react-tabs__tab.react-tabs__tab--selected {
+        background-color: rgba(0, 0, 0, 0.1);
+        outline: none;
+        border-radius: 10px !important;
+        border: none;
+    }
+}

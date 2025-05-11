@@ -1,0 +1,36 @@
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    /* margin-top: 65px; */
+}
+
+.category{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.spinner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.no-subcategories {
+    padding: 20px;
+    margin: 0 auto;
+}
+.car-con{
+    margin-top: 60px;
+}

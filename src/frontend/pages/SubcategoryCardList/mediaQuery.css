@@ -1,0 +1,58 @@
+/* Desktop styles */
+@media all and (min-width: 768px) {
+    .category-detail .sub-category {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        z-index: 1;
+        margin-top: 30px;
+    }
+    .category-detail{
+        margin-top: 77px;
+        position: relative;
+        background: linear-gradient(to bottom, #ffdcdc, #fff);  
+        overflow: hidden; 
+    }
+
+    .banner-1{
+        width: 100%;
+        height: auto;
+        margin-top: -0px;
+    }
+
+    .bg-style, .bg-style2, .bg-style3{
+        position: absolute;
+        left: 0px;
+        top: 771px;
+        background-color: gray;
+        background: linear-gradient(to bottom, #ffdada, #fff);
+        box-shadow: -5px -10px 10px rgba(135, 135, 135, 0.823);
+        height: 1600px;
+        width: 1340px;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+        z-index: -3;
+    }
+
+    .bg-style2{
+        background: linear-gradient(to bottom, #ffe6e6, #fff);
+        top: 998px;
+        height: 1150px;
+        width: 955px;
+        z-index: -2;
+    }
+
+    .bg-style3{
+        background: linear-gradient(to bottom, #ffe5e5, #fff);
+        top: 1225px;
+        height: 690px;
+        width: 570px;
+        z-index: -1;
+    }
+
+}
+
+@media all and (max-width: 768px) {
+    .bg-style1,.bg-style2,.bg-style2{
+        display: none;
+    }
+}

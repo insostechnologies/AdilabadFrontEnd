@@ -1,0 +1,47 @@
+/* Desktop style */
+@media (min-width: 768px) {
+  .order-history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    background-color: #fff1f1;
+    border-radius: 20px;
+  }
+  
+  .buy-date,
+  .detail-box {
+    padding: 1px 10px;
+  }
+
+  .top-actions p:hover {
+    cursor: pointer;
+  }
+
+  .detail-box p:hover {
+    cursor: pointer;
+  }
+
+  .top-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 15px 0px;
+  }
+  .orders-list {
+    width: 85%;
+  }
+  .date-box {
+    background-color: #ffffffbb;
+    border-radius: 20px;
+    border-bottom: 1px solid rgb(222, 222, 222);
+    padding: 5px 0px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+}

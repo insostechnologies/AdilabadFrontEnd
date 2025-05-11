@@ -1,0 +1,54 @@
+/* desktop styles */
+
+@media (min-width: 768px) {
+  .category-container {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 65px;
+  }
+
+  .category-section {
+    align-items: start;
+    justify-content: center;
+    width: 90%;
+    max-width: 1400px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+  }
+
+  .view-more-btn {
+    width: 70px;
+    height: 70px;
+  }
+
+  .category-label {
+    margin-top: 12px;
+    font-size: 16px;
+  }
+}
+
+/* mobile screen */
+@media (min-width: 365px) and (max-width: 430px) {
+  .category-section {
+    gap: 26px;
+  }
+}
+@media (max-width: 320px) {
+  .img-wrapper {
+    width: 45px !important;
+    height: 45px !important;
+  }
+  .category-section {
+    gap: 8px !important;
+  }
+  .tag-text {
+    margin-right: -45px !important;
+    margin-top: -35px !important;
+    width: 25px !important;
+    height: 25px !important;
+    padding: 7px !important;
+    overflow: hidden !important;
+    font-size: 8.5px !important;
+  }
+}

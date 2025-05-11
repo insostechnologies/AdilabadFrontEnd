@@ -1,0 +1,17 @@
+/* Existing desktop styles */
+
+@media (min-width: 768px) {
+  .img-wrapper {
+    width: 75px;
+    height: 75px;
+    box-shadow: 0 0 10px #85858564;
+  }
+}
+
+/* smaller screen */
+
+@media (max-width: 360px) {
+  /* .category {
+    margin: 8px 10px;
+  } */
+}

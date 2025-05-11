@@ -1,0 +1,260 @@
+/*======Desktop Navbar=======*/
+.desktop_mobile_navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 9999;
+  transition: 0.4s;
+}
+
+.onScroll {
+  box-shadow: -5px 5px 19px rgba(0, 0, 0, 0.1);
+}
+
+.desktop_navbar {
+  height: 70px;
+  margin: 0 auto;
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  width: 300px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.brand>span {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-left: 15px;
+  color: var(--black-color);
+}
+
+.desktop_navbar .brand_logo {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.nav__list .nav__item span {
+  font-family: "Poppins", sans-serif;
+  margin-left: 4.5rem;
+  color: var(--black-color);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.Notification {
+  position: relative;
+}
+
+.Notification .notify_num {
+  position: absolute;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  top: -2px;
+  right: -13px;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: var(--morelighter-red-color);
+  font-size: 13px;
+  color: var(--white-color);
+  opacity: 0.8;
+}
+
+.contact_btn button {
+  padding: 8px 12px;
+  color: var(--red-color);
+  font-family: "Poppins", sans-serif;
+  border: 1px solid var(--red-color);
+  border-radius: 9px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+
+.profile_img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.nav_logo {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_icon {
+  height: 20px;
+  width: 20px;
+}
+
+.desktop_navbar .nav__item .nav__link.active {
+  color: #ff0000;
+  text-decoration: underline !important;
+}
+
+/* Desktop navbar responsiveness  */
+@media (max-width: 768px) {
+  .desktop_navbar {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .nav_logo,
+  .mob_only {
+    display: none;
+  }
+
+  .desktop_navbar {
+    height: 75px;
+    margin: 0 auto;
+  }
+
+  .brand>span {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+
+  .desktop_navbar .nav__list {
+    padding-left: 0px;
+  }
+
+  .nav__list .nav__item span {
+    margin: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .contact_btn button {
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  .profile_img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+
+
+@media (max-width: 1024px) {
+  .brand {
+    width: 200px;
+  }
+
+  .brand>span {
+    font-size: 2rem;
+    margin-left: 6px;
+  }
+
+  .nav__list .nav__item span {
+    margin-left: 2.5rem;
+  }
+}
+
+/* =====Mobile Navbar css with responsive===== */
+.mobile_navbar .nav__item .nav__link.active {
+  background-color: #f0b1b1;
+}
+
+@media screen and (max-width: 768px) {
+
+  .nav__link span {
+    font-size: 10px !important;
+    font-weight: 600;
+  }
+
+  .nav__menu {
+    position: fixed;
+    bottom: 0;
+    background-color: var(--white-color);
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    /* padding: 8px 0; */
+    box-shadow: 0 0 20px rgba(46, 46, 46, 0.147);
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+  }
+
+  .nav__link {
+    color: var(--black-color);
+    display: grid;
+    justify-items: center;
+    row-gap: 0.4rem;
+    width: 65px;
+    padding: 5px 3px 5px 3px;
+  }
+
+  .nav__list .nav__item span {
+    margin-left: 0.1rem;
+    color: var(--black-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .home_logo {
+    width: 33px;
+  }
+
+  .Notification .notify_num {
+    top: -28px;
+    right: 10px;
+    width: 17px;
+    height: 17px;
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile_navbar span {
+    display: none;
+  }
+}
+
+/* Ensure badge is positioned correctly */
+.badgeNoti {
+  background-color: red;
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  /* right: -10px; */
+  z-index: 10;
+}

@@ -1,0 +1,62 @@
+.my-modal-overlay {
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    /* bottom: 0px; */
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.my-modal-content {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* max-width: 600px; */
+    /* width: 100%; */
+    position: relative;
+    font-family: Arial, sans-serif;
+    /* Optional: ensure enough space inside */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    /* Ensure padding does not affect width */
+    height: 100vh;
+    overflow-y: scroll;
+    z-index: 10000;
+}
+
+.my-modal-close-button {
+    position: fixed;
+    bottom: 5px;
+    right: 5px !important;
+    height: 20px;
+    width: -webkit-fill-available;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    justify-content: flex-end;
+}
+.my-modal-close-button span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 5px !important;
+    padding: 5px !important;
+}
+
+.body-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}

@@ -1,0 +1,443 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 55px;
+    padding-bottom: 55px;
+}
+
+.body-profile {
+    width: 100%;
+    padding: 20px;
+}
+
+.profile-card {
+    width: 100%;
+    /* background: #F4C095; */
+    background: linear-gradient(#f3b787, #ffffff);
+    box-shadow: 0px 5px 13px rgb(234, 234, 234);
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-pic {
+    width: 70px;
+    height: 70px;
+    box-shadow: 0px 0px 10px rgb(130, 130, 130);
+    border-radius: 50%;
+    border: 4px solid white;
+    overflow: hidden;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details .pf-detail {
+    font-size: 0.7em;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.details h5 {
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.pf-edit-btn {
+    background-color: #fbd4b4;
+    outline: none;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 10.5px;
+    padding: 1px 10px;
+    border-top-left-radius: 15px;
+    box-shadow: 0px 4px 5px 0px #b86f01d2;
+}
+
+.pf-edit-btn:hover {
+    background-color: #feaf6f;
+}
+
+/* Modal styles */
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.fade.modal-backdrop.show {
+    display: none;
+}
+
+.actions .countBx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.actions .countBx .count {
+    font-size: 14px;
+}
+
+/* Profile update modal */
+.modal-title-custom {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.input-area-custom {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    outline: none;
+    border-radius: 8px;
+    border: 2px solid #ee2e31;
+    font-size: 1rem;
+}
+
+.submit-button-custom {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #ee2e31;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.submit-button-custom:hover {
+    background-color: #d02528;
+}
+
+textarea.input-area-custom {
+    resize: none;
+}
+
+.store-create {
+    font-size: 12px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.store-create .time {
+    font-size: 10px;
+}
+
+.store-create .store-listing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+/* end */
+
+.title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title .product-tit {
+    margin-bottom: 5px;
+}
+
+.title span {
+    background: #e6e6e6;
+    border-radius: 50px;
+    height: 1.5em;
+    width: 1.5em;
+    padding: 3px;
+    color: #ccc;
+}
+
+.search-list {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.searched-box {
+    background: #fcddc3;
+    border-radius: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    min-width: 160px;
+    margin: 0 10px 0 0;
+    padding: 15px 10px;
+    gap: 10px;
+}
+
+.searched-box img {
+    width: 2em;
+    height: 2em;
+    object-fit: cover;
+}
+
+.searched-box p {
+    font-size: 0.8em;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+.list-profile {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+    padding: 5px;
+}
+
+.list-profile-shadow {
+    background: linear-gradient(to left, #ffffff, #eaeaea);
+    border: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.list-profile-shadow:hover {
+    background: linear-gradient(to left, #cbcbcb, #ffffff);
+}
+
+.my-order-history {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #1d1d1d;
+}
+
+.list-profile .icon {
+    margin: 5px 0;
+    background: #ef8989;
+    padding: 5px;
+    width: 1.5em;
+    height: 1.5em;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.my-order-history .icon {
+    margin: 5px 0;
+    color: #fff;
+    background: #0471ff;
+    padding: 5px;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+}
+
+.my-order-history p {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    color: #525252;
+}
+
+.list-profile-wrapper .list-profile p {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    color: #000;
+}
+
+.search-history {
+    padding-left: 10px;
+}
+
+/* UserProfile.css */
+
+/* Styling for the input fields */
+.input-area-custom {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.input-area-custom:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+
+.profile-pic img {
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Modal styling */
+.modal-title-custom {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.pf-edit-btn-modal {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pf-edit-btn-modal:hover {
+    background-color: #0056b3;
+}
+
+/* Gender container styling */
+.gender-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+.gender-container label {
+    font-size: 16px;
+    color: #333;
+}
+
+.gender-container input {
+    margin-right: 10px;
+}
+
+/* Style for the gender radio buttons */
+.gender-container label input[type="radio"] {
+    accent-color: #007bff;
+}
+
+.current-profile-pic {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-img-preview {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.contact-icon {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.close-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.contact-option {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.btnBx {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 20px 0px 20px 0px;
+    gap: 15px;
+}
+
+.modal-content h3 {
+    text-align: left;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}

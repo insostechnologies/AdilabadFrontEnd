@@ -1,0 +1,20 @@
+.wg-box {
+    gap: 0px !important;
+}
+
+.slider.round {
+    background-color: red;
+    width: 60px;
+}
+
+input:checked+.slider {
+    background-color: green !important;
+}
+
+.switch-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    margin: 10px;
+}

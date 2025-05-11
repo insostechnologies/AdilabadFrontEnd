@@ -1,0 +1,58 @@
+.category-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+
+.banner-1 {
+    width: 97%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.banner-1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.category-detail .sub-category {
+    display: grid;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 120px;
+}
+
+.loadingCat {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: transparent !important;
+}
+
+.Home-banner .img {
+    object-fit: cover;
+    height: 200px !important;
+}
+
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.no-subcategories {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto !important;
+}
+
+.car-con-card-type{
+    margin-top: 15px;
+}

@@ -1,0 +1,24 @@
+/* .Home-banner{
+    height: 200px;
+    width: 100%;
+    background-color: red;
+}
+.Home-banner img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+} */
+
+.Home-banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    height: 200px;
+}
+.Home-banner{
+    /* height: fit-content; */
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

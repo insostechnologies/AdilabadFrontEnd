@@ -1,0 +1,126 @@
+@media (min-width: 768px) {
+  .details {
+    grid-column: 2;
+    margin-left: 100px;
+  }
+
+  .pf-dts {
+    margin-left: -1px;
+  }
+  .pf-dts p {
+    font-size: 0.7em;
+    font-weight: 400;
+  }
+
+  .details p {
+    font-size: 1em;
+  }
+
+  .details h5 {
+    font-size: 1em;
+  }
+
+  .title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .saved {
+    max-width: 1250px;
+    margin: auto;
+  }
+
+  .save-list {
+    justify-content: flex-start;
+  }
+
+  .saved-box {
+    min-width: 200px;
+    padding: 30px 20px;
+    height: 110px;
+  }
+
+  .saved-box img {
+    width: 3em;
+    height: 3em;
+  }
+
+  .saved-box p {
+    font-size: 1em;
+  }
+
+  .see-more {
+    cursor: pointer;
+  }
+
+  /* .save-list .left-side-blurry {
+        position: absolute;
+        left: 20;
+        width: 60px;
+        height: 130px;
+        z-index: 1;
+        background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+    }
+
+    .save-list .right-side-blurry {
+        position: absolute;
+        right: 165px;
+        width: 60px;
+        height: 130px;
+        z-index: 1;
+        background: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+    } */
+
+  .navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 8%;
+    margin: auto;
+    margin-top: 5px;
+  }
+
+  .save-history .save-list {
+    display: flex;
+    overflow: hidden;
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .saved .save-list {
+    display: flex;
+    overflow: hidden;
+    width: 95%;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .navigation-buttons .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffe6e6;
+    border-radius: 50%;
+    border: none;
+    padding: 10px;
+    margin-top: 8px;
+    cursor: pointer;
+  }
+}
+
+/* mobile screen */
+@media (max-width: 767px) {
+  .navigation-buttons {
+    display: none;
+  }
+
+  .navigation-buttons .button {
+    display: none;
+  }
+
+  /* .right-side-blurry,
+  .left-side-blurry {
+    display: none;
+  } */
+}

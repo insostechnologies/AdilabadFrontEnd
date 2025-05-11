@@ -1,0 +1,245 @@
+.card-1 {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+  margin: 5px;
+  padding: 10px;
+  width: 100%;
+  height: fit-content;
+  /* position: relative; */
+}
+
+.card-1 .card-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 7px;
+  margin-bottom: -4px;
+}
+
+.card-1 .card-details p {
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+
+.store-card {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  width: 100%;
+  height: fit-content;
+  font-family: 'Poppins';
+  background-color: #fff0f1;
+  border-radius: 20px;
+  position: relative;
+}
+
+.store-image {
+  flex-basis: 40%;
+  margin: 10px 0;
+  position: relative;
+  width: 130px;
+  height: 130px;
+}
+
+.store-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.store-infos {
+  flex-basis: 60%;
+  padding: 15px;
+  padding-right: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: left;
+  position: relative;
+}
+
+.store-name {
+  font-size: 1em;
+  margin: 5px 5px;
+  margin-right: 0px;
+  color: #333;
+  font-weight: bold;
+}
+.store-location {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the start */
+  color: #e74c3c;
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  max-width: 160px !important;
+  word-break: break-word; /* Break words if needed */
+  white-space: normal; /* Allow text to wrap to multiple lines */
+  overflow-wrap: break-word; /* Ensure breaking in case of long words */
+}
+
+
+.store-infos .icon-location {
+  height: 22px;
+  width: 22px;
+  margin-right: 2px;
+  margin-left: -4px;
+}
+
+.store-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.rating-score {
+  font-size: 0.7em;
+  background: #27ae60;
+  color: #fff;
+  border-radius: 3px;
+  gap: 5px;
+  padding: 3px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.rating-comments-store {
+  font-size: 0.7em !important;
+  color: #828282;
+  font-weight: 550;
+}
+
+.store-offers {
+  margin-bottom: 10px;
+}
+
+.offer-discount {
+  display: block;
+  font-size: 0.7em;
+  color: #2c3e50;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.offer-products {
+  display: block;
+  font-size: 0.6em;
+  color: #2c3e50;
+  margin: 5px 0;
+}
+
+.store-verified {
+  background: rgba(0, 0, 0, 0.383);
+  position: absolute;
+  bottom: 0px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font-size: 0.7em;
+  left: 10px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.store-verified .icon-shield {
+  height: 20px;
+  width: 20px;
+  margin-right: 2px;
+  margin-left: -5px;
+}
+
+.view-details-btn {
+  background-color: #f2d7c1;
+  color: #000;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 90%;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+}
+
+.view-details-btn:hover {
+  background-color: #ff6a2a;
+}
+
+.card-details span {
+  margin-bottom: 0px;
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: #cccccc;
+}
+
+.card-details .bottom_dets {
+  margin-bottom: 0px;
+  font-weight: 500;
+  font-size: 12px !important;
+}
+
+.save-icon {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ff0000;
+}
+
+.offer-discount {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #f2c1c1;
+  border-radius: 20px;
+  background-color: #fef7f7;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  color: #000;
+  margin: 0px;
+}
+
+.offer-discount .discount {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.open-close {
+  padding: 3px;
+  color: #fff;
+  border-radius: 7px;
+  font-size: 8.5px !important;
+  /* width: 35px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.store-name{
+  display: -webkit-box !important;
+	-webkit-line-clamp: 3 !important; /* Number of lines to show */
+	-webkit-box-orient: vertical !important;
+	overflow: hidden !important; /* Hide the overflowed text */
+	text-overflow: ellipsis !important; /* Add ellipsis (...) */
+  max-width: 150px;
+}

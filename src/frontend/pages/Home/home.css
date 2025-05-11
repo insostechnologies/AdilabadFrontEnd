@@ -1,0 +1,44 @@
+.homeCon {
+	margin: 70px 0px;
+}
+.homeCon .display-msg{
+	text-align: center !important;
+	margin-top: 10px;
+}
+
+.spinnerCon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+@media (min-width: 769px) {
+	.homeCon {
+		margin: 70px 0px;
+		background: linear-gradient(to bottom, #fff9f9, #fff);
+	}
+}
+
+@media (min-width: 980px) {
+	.Home-banner img{
+		min-height: 600px;
+	}
+}
+
+@media (min-width: 720px) {
+	.Home-banner img{
+		min-height: 400px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.Home-banner img{
+		min-height: 700px;
+	}
+}
+.Toastify__toast.Toastify__toast-theme--light.Toastify__toast--success{
+	position: absolute;
+	TOP: 70px;
+	width: 100%;
+}

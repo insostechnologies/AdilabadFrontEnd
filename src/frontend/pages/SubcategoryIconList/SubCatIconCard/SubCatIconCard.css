@@ -1,0 +1,49 @@
+.Sub-Cat-Icon-Card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #c5c5c5;
+    padding: 10px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 97%;
+}
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+.box-left img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 60px;
+    height: 60px;
+}
+.box-left{
+    gap: 10px;
+}
+.box-left .card-box-title{
+    font-family: 'Poppins' !important;
+    flex: 1;
+    color: #000;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+.card-box-num{
+    font-family: 'Poppins' !important;
+    flex: 1;
+    color: #000;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.new-tag{
+    padding: 0px 10px 0px 10px;
+    margin: 0px 10px 0px 10px;
+    border-radius: 100px;
+    background: #ee2e31;
+    color: white;
+    font-size: 10px;
+}

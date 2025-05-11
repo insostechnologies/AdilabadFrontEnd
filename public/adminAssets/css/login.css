@@ -1,0 +1,149 @@
+.login_container {
+  height: 100vh;
+  padding: 9.375rem 0;
+  width: 100%;
+  background-color: var(--morelighter-red-color);
+}
+
+.wrapper {
+  width: 20rem;
+  height: 18.75rem;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: var(--white-color);
+  overflow: hidden;
+  box-shadow: 0 8px 8px var(--shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.col {
+  width: 20rem;
+  height: auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5625rem;
+  margin: 1.875rem 0;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  color: var(--red-color);
+}
+
+/* Form area */
+.login_Form {
+  text-align: center;
+}
+
+.login_Form input {
+  border: none;
+  text-align: start;
+  margin: 0.625rem 0;
+  width: 12rem;
+  border-bottom: 1.2px solid var(--morelighter-red-color);
+  padding: 5px 1.5625rem 5px 3px;
+  font-size: .9375rem;
+  color: var(--moredark-gray-color);
+  transition: all 300ms ease-in-out;
+}
+
+.login_Form input::placeholder {
+  color: var(--medium-gray-color);
+  font-size: 0.6875rem;
+}
+
+.login_Form input:focus {
+  border-bottom: 1.2px solid var(--gold-color);
+}
+
+.password_Wrapper {
+  position: relative;
+}
+
+.toggle_Icon {
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+  color: var(--medium-gray-color);
+  cursor: pointer;
+}
+
+.toggle_Icon:hover {
+  color: var(--dark-gray-color);
+}
+
+.error_Msg{
+  text-align: start;
+  font-size: .6rem;
+  margin-left: 3.125rem;
+  margin-top: -6px;
+  color: var(--red-color);
+}
+
+/* .wrong_credentials{      // If admin filled wrong information
+  text-align: center;
+  width: 100%;
+  height: 20px;
+  color:var(--red-color);
+  font-size: 10px;
+  padding: 4px 0;
+  margin-bottom: 8px;
+} */
+
+/* Form area end */
+
+
+.login_Btn {
+  background-color: var(--gold-color);
+  border-radius: 8px;
+  padding: 5px 10px;
+  color: var(--white-color);
+  margin-top: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 300ms ease-in-out;
+  margin-top: 2rem;
+}
+
+.login_Btn:hover {
+  background-color: var(--white-color);
+  color: var(--red-color);
+  border: 1px solid var(--gold-color);
+}
+
+
+
+
+/* Responsiveness css */
+/* mobile screen */
+@media all and (max-width: 376px) {
+  .container {
+    height: 90vh;
+    padding: 9.375rem 0;
+  }
+  .wrapper {
+    width: 16.5625rem;
+    margin: 0 auto;
+  }
+  .title {
+    margin-bottom: 10px;
+    padding-top: 6px;
+  }
+  .col {
+    width: 100%;
+    height: 5rem;
+  }
+
+  .login_Form {
+    text-align: center;
+  }
+
+  .login_Form input {
+    width: 12.1875rem;
+  }
+  .error_Msg{
+    text-align: start;
+    margin-left: 1.5625rem;
+  }
+}

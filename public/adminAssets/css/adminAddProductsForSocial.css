@@ -1,0 +1,29 @@
+.social-input-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.social-input {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+.social-input i {
+    margin-right: 5px;
+}
+.social-input input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+}
+.add-social-input {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}

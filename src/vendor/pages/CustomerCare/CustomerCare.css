@@ -1,0 +1,93 @@
+/* Mobile first design */
+.customer-care {
+  text-align: center;
+  height: 100vh;
+  padding: 10px;
+  padding-top: 10px;
+}
+
+.header-image {
+  width: 170px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.details-cus {
+  margin-top: 20px;
+}
+
+.detail-cus .cus-title {
+  border: 1px solid rgb(179, 0, 255);
+  border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%;
+  width: 40%;
+  padding: 5px 0;
+  margin: 0 auto;
+  font-size: 18px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: border-radius 500ms ease;
+}
+
+.details-cus .cus-title:hover {
+  border-radius: 15px;
+}
+
+.detail-cus p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: red;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+.map {
+  width: 90%;
+  height: 120px;
+  border: none;
+  margin-top: 5px;
+  border-radius: 10px;
+  margin-bottom: 80px;
+}
+
+/* Media Queries for Tablets */
+@media only screen and (min-width: 768px) {
+  .customer-care {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding: 20px;
+  }
+
+  .detail h2 {
+    font-size: 22px;
+  }
+
+  .detail p {
+    font-size: 18px;
+  }
+
+  .map {
+    height: 250px;
+  }
+}
+
+/* Media Queries for Desktop */
+@media only screen and (min-width: 1024px) {
+  .customer-care {
+    max-width: 800px;
+  }
+
+  .detail h2 {
+    font-size: 24px;
+  }
+
+  .detail p {
+    font-size: 20px;
+  }
+
+  .map {
+    height: 300px;
+  }
+}
+

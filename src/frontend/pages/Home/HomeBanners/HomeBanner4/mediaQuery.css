@@ -1,0 +1,67 @@
+/* Desktop screen  */
+@media (min-width: 768px) {
+  .title {
+    margin-bottom: 5px;
+  }
+
+  .home-banner4-container {
+    max-width: 1270px;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+
+  .home-banner4 {
+    justify-content: center;
+  }
+
+  .banner4-item {
+    min-width: 170px;
+    padding: 10px 5px;
+    height: 100%;
+  }
+
+  .banner4-item img {
+    width: 100%;
+    box-shadow: 0 0 5px rgba(119, 119, 119, 0.404);
+  }
+
+  .banner4-item .banner-title {
+    width: 160px;
+    box-shadow: 0px 3px 5px rgba(181, 181, 181, 0.238);
+  }
+
+  .see-more {
+    cursor: pointer;
+  }
+
+  .navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 8%;
+    margin: auto;
+    margin-top: 5px;
+  }
+
+  .navigation-buttons .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffe6e6;
+    border-radius: 50%;
+    border: none;
+    padding: 10px;
+    margin-top: 8px;
+    cursor: pointer;
+  }
+}
+
+/* mobile screen */
+@media (max-width: 767px) {
+  .navigation-buttons {
+    display: none;
+  }
+
+  .navigation-buttons .button {
+    display: none;
+  }
+}

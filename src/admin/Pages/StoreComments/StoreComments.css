@@ -1,0 +1,17 @@
+.react-datepicker__input-container input {
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+.star-icon {
+    font-size: 20px;
+    margin-right: 2px;
+}
+
+.star-icon.selected {
+    color: #FFD700; /* Gold color for selected stars */
+}
+
+.star-icon.unselected {
+    color: #E0E0E0; /* Light gray for unselected stars */
+}

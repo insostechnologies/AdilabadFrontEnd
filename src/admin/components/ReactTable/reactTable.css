@@ -1,0 +1,86 @@
+/* Main container styling */
+.data_table {
+    overflow: auto;
+    /* Enable scrolling */
+    max-height: 1000px;
+    /* Set a scrollable height */
+    position: relative;
+    /* Ensure proper positioning for sticky elements */
+    user-select: text;
+    /* Allow text selection */
+    padding: 10px;
+    background-color: #ececec;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px inset; */
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px inset;
+}
+
+/* Sticky first row (header) */
+.data_table table th {
+    position: sticky;
+    /* Sticky header */
+    top: 0;
+    /* Stick to the top */
+    background-color: #ffffff;
+    /* Background color for visibility */
+    z-index: 3;
+    /* Ensure header stays above other elements */
+    font-size: 18px;
+    /* Header font size */
+    padding: 10px;
+    /* Add padding for header cells */
+    line-height: 25px !important;
+    /* Ensure consistent height */
+}
+
+/* Sticky first column */
+.data_table table td:first-child,
+.data_table table th:first-child {
+    position: sticky;
+    /* Sticky column */
+    left: 0;
+    /* Stick to the left */
+    background-color: #f9f9f9;
+    /* Background color for first column */
+    z-index: 2;
+    /* Lower than header z-index but above other cells */
+    width: 150px;
+    /* Set width for the first column */
+    font-size: 15px;
+    /* Font size for first column */
+}
+
+/* Sticky intersection of first row and first column */
+.data_table table th:first-child {
+    z-index: 4;
+    /* Higher z-index for intersection cell */
+    background-color: #e6e6e6;
+    /* Optional: Different color for clarity */
+}
+
+/* General Table Styling */
+.data_table table {
+    border: none;
+    /* Remove borders for a cleaner look */
+    padding: 20px;
+    /* Add padding around the table */
+    width: 100%;
+    /* Ensure full-width table */
+    border-collapse: collapse;
+    /* Ensure proper spacing */
+}
+
+.data_table table td {
+    font-size: 15px;
+    /* Font size for table data */
+    padding: 10px;
+    /* Padding for table data */
+    line-height: 20px;
+    /* Line height for better readability */
+}
+
+/* Make text selectable in all table elements */
+.data_table * {
+    user-select: text;
+    /* Ensure text selection for all child elements */
+}

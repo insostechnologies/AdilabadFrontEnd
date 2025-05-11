@@ -1,0 +1,79 @@
+.Sub-Cat-Card {
+    display: block;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.Sub-Cat-Card:hover {
+    transform: translateY(-5px);
+    /* Slight hover effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    /* Enhance shadow on hover */
+}
+
+.subcategory-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.subcategory-image {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    background-color: #f3f3f3;
+    /* Light background for images */
+}
+
+.subcategory-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Makes sure the image covers the container without stretching */
+}
+
+.subcategory-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.subcategory-info {
+    margin-bottom: 10px;
+}
+
+.subcategory-name {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.subcategory-count {
+    font-size: 10px;
+    color: #666;
+    margin-bottom: 0px;
+}
+
+.new-tag {
+    background-color: #ee2e31;
+    /* Pink color for the 'New' tag */
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 12px !important;
+    margin: 0px !important;
+    border-radius: 20px;
+    text-align: center;
+    width: max-content;
+    align-self: flex-start;
+    /* margin-top: auto; */
+    width: 100%;
+}

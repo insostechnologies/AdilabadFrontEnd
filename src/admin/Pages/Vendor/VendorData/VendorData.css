@@ -1,0 +1,8 @@
+.wg-box-container{
+    border-radius: 0px !important;
+    border-bottom-left-radius: 12px !important;
+    border-bottom-right-radius: 12px !important;
+    border: 1px solid #cccccc;
+    border-top: none;
+    margin-top: 100px;
+}

@@ -1,0 +1,63 @@
+.noti-card {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 14px;
+    gap: 18px;
+    /* max-height: 20px; */
+    margin-left: 4px;
+    margin-right: 4px;
+    background: linear-gradient(rgb(255, 245, 245), #ffffff);
+    box-shadow: 0px 0px 13px rgb(216, 216, 216);
+    border-radius: 20px;
+    margin-bottom: -15px;
+}
+.noti-card .rows h4{
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.noti-card .rows img{
+    height: 60px;
+    width: 60px;
+    /* width: max-content; */
+    object-fit: contain;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.text {
+    flex: 1;
+}
+
+.text p {
+    line-height: 20px;
+    font-size: 0.9em;
+    color: #7C7C7C;
+}
+
+.time {
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #A0A0A0;
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 768px) {
+    .noti-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        margin-bottom: 15px; /* Add margin to separate the cards */
+    }
+
+    .text h4 {
+        font-size: 1.2em;
+    }
+
+    .text p {
+        font-size: 1em;
+    }
+}

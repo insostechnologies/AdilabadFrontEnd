@@ -1,0 +1,74 @@
+.wg-box-container{
+    border-radius: 0px !important;
+    border-bottom-left-radius: 12px !important;
+    border-bottom-right-radius: 12px !important;
+    border: 1px solid #cccccc;
+    border-top: none;
+}
+
+.input_label{
+    width: 100%;
+    max-width: 140px !important;
+}
+
+.input_field{
+    margin-right: 100px !important;
+}
+
+.prvImg{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    object-fit: contain;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.pass_input_div {
+    position: relative;
+}
+
+.pass_input_div svg {
+    font-size: 20px;
+    position: absolute;
+    right: 110px;
+    bottom: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+.pasInput{
+    padding-right: 40px !important;
+}
+
+.from_btn_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    margin-top: 10px;
+}
+
+.from_btn{
+    width: 20% !important;
+}
+
+/* About us & seo */
+.address-title{
+    max-width: 140px !important;
+}
+
+.address-input{
+    width: 97% !important;
+}
+
+.keyword-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    width: 925px;
+}
+
+.keywords-title{
+    max-width: 140px !important;
+}

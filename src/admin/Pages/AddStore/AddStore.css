@@ -1,0 +1,397 @@
+.wg-box-container {
+    border-radius: 0px !important;
+    border-bottom-left-radius: 12px !important;
+    border-bottom-right-radius: 12px !important;
+    border: 1px solid #cccccc;
+    border-top: none;
+}
+
+.selected_categories {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    margin: 20px 0px 0px 0px;
+    flex-wrap: wrap;
+}
+
+.my-modal-content {
+    width: 100%;
+}
+
+.my-modal-content input {
+    height: 40px !important;
+    width: 40% !important;
+}
+
+.my-modal-content .days_con_bx {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (min-width: 767px) {
+    .my-modal-content .days_con_bx {
+        flex-direction: column;
+    }
+    .my-modal-content input {
+        width: 200px;
+    }
+}
+
+
+
+
+.selectedCats {
+    padding: 7px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 1px 1px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.selectedCats:hover {
+    background-color: #f7f7f7;
+}
+
+.selectedCats span {
+    font-size: 11px;
+}
+
+.selectedCats .icon {
+    font-size: 12px;
+    color: red;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.selectedCats .icon:active {
+    transform: scale(0.8);
+}
+
+.tabs-wrapper {
+    background-color: #f1f1f1;
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    box-shadow: 0px 4px 24px 2px rgba(20, 25, 38, 0.05)
+}
+
+.main-content-inner .tabs-wrapper h3 {
+    font-size: 16px !important;
+}
+
+
+/* =========Store details form==========*/
+.custom-select-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.custom-selected-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.custom-dropdown-item span {
+    font-size: 15px;
+}
+
+.custom-selected-item span {
+    margin-left: 10px;
+    font-size: 20px;
+
+}
+
+.custom-dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    z-index: 1;
+    width: 100%;
+    height: 240px;
+    overflow-y: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.custom-search-input-wrapper {
+    padding: 5px;
+    width: 100%;
+    background-color: #f7f7f7;
+    position: sticky;
+    top: 0px;
+}
+
+#custom-search-input {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background: floralwhite;
+}
+
+.custom-dropdown-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.custom-dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+.custom-dropdown-item span {
+    margin-left: 10px;
+}
+
+.keyword-input-container {
+    display: flex;
+    align-items: center;
+}
+
+.keyword-input-container input[type="text"] {
+    margin-right: 10px;
+}
+
+.add-more-btn {
+    background-color: #2196f3;
+    color: white;
+    width: 100px;
+    padding: 9px 10px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.add-more-btn:hover {
+    color: white;
+    background-color: #0069bf;
+}
+
+.remove-field {
+    border: none !important;
+    padding: 5px !important;
+    color: red;
+    cursor: pointer;
+}
+
+.remove-field:hover {
+    color: red;
+}
+
+.prvImg,
+.prvIcon {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    object-fit: contain;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.Add-more {
+    margin-left: 310px;
+    margin-top: -15px;
+    padding: 8px;
+    width: 16%;
+    color: #00779e;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.others-title-field {
+    max-width: 250px !important;
+}
+
+.store-timing .body-title {
+    margin-right: -30px;
+}
+
+.store-timing-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 40px;
+    margin-left: 60px;
+}
+
+.store-timing-day {
+    cursor: pointer;
+}
+
+.store-timing-time input {
+    font-size: 12px !important;
+    padding: 10px !important;
+    margin-bottom: 5px !important;
+    cursor: pointer;
+}
+
+/* ______________ */
+
+
+/* ==========Add photos/Videos add form========= */
+.wg-box-wrapper {
+    padding: 0px !important;
+    border: 0px !important;
+}
+
+.main-content-wrapper {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    padding: 0px !important;
+    border-right: 1px solid #cccccc !important;
+    border-bottom: 1px solid #cccccc !important;
+    border-bottom-left-radius: 12px !important;
+    border-bottom-right-radius: 12px !important;
+
+}
+
+.all-forms {
+    width: 80%;
+}
+
+.all-forms .wg-box-container {
+    border: 0px;
+    box-shadow: none;
+}
+
+.ckEdit .ck .ck-reset .ck-editor .ck-rounded-corners {
+    width: 100% !important;
+
+}
+
+.ckEdit .ck-editor__editable {
+    min-height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    /* Ensure padding and border are included in the element's total width and height */
+}
+
+.ckEdit .ck-toolbar {
+    border: none;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 720px) {
+    .tab-content {
+        display: block;
+    }
+}
+
+
+
+
+
+.ck.ck-reset.ck-editor.ck-rounded-corners {
+    width: inherit;
+}
+
+
+
+
+fieldset {
+    background-color: #f1f1f1;
+    padding: 15px;
+}
+
+fieldset input {
+    background-color: #ffff !important;
+    outline: 1px solid #198754 !important;
+}
+
+fieldset textarea {
+    background-color: #ffff !important;
+    outline: 1px solid #198754 !important;
+}
+
+fieldset .custom-selected-item {
+    background-color: #ffff !important;
+    outline: 1px solid #198754 !important;
+}
+
+.Toggle_Btn {
+    padding: 10px 20px;
+    background-color: #198754;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: fit-content !important;
+    margin: auto;
+}
+
+.Toggle_Btn:hover {
+    color: #fff;
+    /* Darker green on hover */
+}
+
+
+
+.store-timing .days {
+    font-size: 20px;
+}
+
+.store-timing {
+    min-width: 200px;
+}
+
+.days_con .days_to {
+    font-size: 15px;
+    width: 100% !important;
+    text-align: center;
+
+}
+
+.days_to {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.switch {
+    margin-top: 10px;
+}
+
+.days_con {
+    background-color: #f1f1f1;
+    padding: 20px;
+    /* margin-top: 10px; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+
+}
+
+.addr_inp {
+    margin-top: 10px;
+}

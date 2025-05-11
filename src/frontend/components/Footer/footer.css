@@ -1,0 +1,201 @@
+.footer_container {
+  width: 100%;
+  position: relative;
+  background-color: var(--gray-color);
+}
+
+.footer_wrapper {
+  width: 96%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+}
+
+.content_area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+}
+.social{
+  margin-top: 15px;
+}
+.brand_info {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.brand_img {
+  width: 65px;
+  height: 65px;
+  margin-right: 10px;
+}
+
+.brand_img img {
+  width: 65px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.brand_details .brand_name {
+  color: var(--white-color) !important;
+  font-family: "Poppins";
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.brand_details .brand_Location {
+  color: var(--white-color) !important;
+  font-size: 12px;
+  font-weight: 300 !important;
+}
+
+.footer_links ul {
+  list-style: circle !important;
+}
+
+.footer_links li {
+  color: white;
+  line-height: 16px;
+  margin-bottom: 2px;
+}
+
+.footer_links li a {
+  font-weight: 300 !important;
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  word-spacing: 2px;
+}
+
+.footer_links li:hover {
+  text-decoration: underline;
+}
+
+.footer_social_links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social img {
+  width: 25px;
+  height: 25px;
+  margin: 0 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.footer_social_links p {
+  color: var(--white-color);
+  font-size: 10px;
+  font-weight: 200;
+  word-spacing: 2px;
+  font-family: "Poppins";
+}
+
+/* Responsiveness */
+@media screen and (min-width: 768px) {
+  .footer_container {
+      padding: 25px;
+  }
+
+  .brand_details .brand_name {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer_container {
+    padding-bottom: 92px;
+  }
+  .footer_links {
+    display: none;
+  }
+  .social .desktop_only_position {
+    display: none;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .footer_container {
+    margin: 0px 0px 55px 0px;
+  }
+  .footer_container.vendor{
+    margin: 0px 0px 0px 0px !important;
+    padding-bottom: 40px;
+  }
+  .content_area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .brand_info {
+    margin-top: 10px;
+  }
+
+  .brand_img {
+    width: 45px;
+    height: 45px;
+    margin-top: 5px;
+  }
+  
+  .brand_img img {
+    margin-top: 0px;
+    width: 55px;
+  }
+
+  .brand_details .brand_name {
+    font-size: 1.5rem;
+    margin-bottom: -3px;
+    padding-top: 0px;
+    margin-left: 5px;
+  }
+
+  .brand_details .brand_Location {
+    font-size: 12px !important;
+    line-height: 20px;
+    font-weight: 300 !important;
+    margin-left: 5px;
+  }
+
+  .footer_links li {
+    line-height: 12px;
+  }
+
+  .footer_links li a {
+    font-weight: 300 !important;
+    word-spacing: 2px;
+  }
+
+  .social img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+
+  .footer_social_links {
+    margin-top: 10px;
+    margin-bottom: -16px;
+  }
+}
+
+@media all and (min-width: 425px) {
+  .mobile_only_pos {
+    display: none;
+  }
+}
