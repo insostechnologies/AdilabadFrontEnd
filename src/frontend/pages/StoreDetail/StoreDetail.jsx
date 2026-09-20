@@ -34,6 +34,7 @@ import { leadsAdd } from '../../../utils/apiCall'; // Import leadsAdd function
 import { AiOutlineShop } from "react-icons/ai";
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
+import { WhatsAppChatButton, GoogleMapsDirectionsButton, CallNowButton, ShareMerchantButton, VerifiedMerchantBadge } from '../../../components/MerchantEnrichments.jsx';
 
 const StoreDetail = () => {
 	const [showImage, setShowImage] = useState(false);
@@ -1021,6 +1022,13 @@ const StoreDetail = () => {
 						</div>
 						<div className="store-detail-des" >
 							<h2 className='store-name-title'>{store.name} {store.is_verified == 1 ? <MdVerifiedUser className='verified-icon' /> : ''} </h2>
+							<div className="store-detail-enrichments-bar" style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', margin: '12px 0 16px 0', alignItems: 'center' }}>
+								<VerifiedMerchantBadge isVerified={store.is_verified == 1} rating={store.average_rating || 4.5} totalReviews={store.comments?.length || 0} />
+								<CallNowButton phone={store.phone || store.whatsapp} />
+								<WhatsAppChatButton phone={store.phone || store.whatsapp} storeName={store.name} />
+								<GoogleMapsDirectionsButton address={address?.area} city={address?.city || 'Adilabad'} storeName={store.name} latitude={store.lat} longitude={store.lng} />
+								<ShareMerchantButton storeName={store.name} />
+							</div>
 							<div className="description" style={{ display: permissions.store_details == '0' ? 'none' : '' }}>
 								<div className="des-wrapper">
 									<div className='store-des main-store-des' dangerouslySetInnerHTML={{ __html: isExpended ? store.short_desc : StoreDefault4LineDes1 + `${desLenghtCheck1 >= 22 ? '' : ''}` }}></div>
