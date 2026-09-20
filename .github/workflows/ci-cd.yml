@@ -1,0 +1,38 @@
+name: Frontend CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "main", "improvements", "feature/cloud-migration" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    name: Build Verification & Bundle Check
+    runs-on: ubuntu-latest
+
+    env:
+      CI: false
+      REACT_APP_API_URL: https://api.adilabadapp.com
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build React Production Bundle
+        run: npm run build
+
+      - name: Verify Web Manifest & Build Artifacts
+        run: |
+          test -f build/index.html
+          test -f build/manifest.json
+          echo "Production React Build Verified Successfully!"
