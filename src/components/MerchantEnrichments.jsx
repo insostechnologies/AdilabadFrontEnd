@@ -103,3 +103,178 @@ export function GoogleMapsDirectionsButton({ address = '', city = 'Adilabad', st
         </a>
     );
 }
+
+/**
+ * Call Now Button Component with Open/Closed Operating Hours Status
+ */
+export function CallNowButton({ phone, openTime = '09:00', closeTime = '21:00' }) {
+    if (!phone) return null;
+
+    const cleanPhone = phone.replace(/[^0-9+]/g, '');
+
+    // Check if store is currently open based on user's current local time
+    const now = new Date();
+    const currentMinutes = now.getHours() * 60 + now.getMinutes();
+
+    const [openH, openM] = openTime.split(':').map(Number);
+    const [closeH, closeM] = closeTime.split(':').map(Number);
+
+    const openMinutes = (openH || 9) * 60 + (openM || 0);
+    const closeMinutes = (closeH || 21) * 60 + (closeM || 0);
+
+    const isOpen = currentMinutes >= openMinutes && currentMinutes <= closeMinutes;
+
+    return (
+        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+            <a
+                href={`tel:${cleanPhone}`}
+                className="btn-call"
+                style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '8px',
+                    backgroundColor: '#0F9D58',
+                    color: '#FFFFFF',
+                    padding: '8px 16px',
+                    borderRadius: '20px',
+                    fontWeight: '600',
+                    fontSize: '14px',
+                    textDecoration: 'none',
+                    boxShadow: '0 2px 6px rgba(15, 157, 88, 0.3)',
+                    transition: 'transform 0.2s ease, background-color 0.2s ease',
+                    cursor: 'pointer'
+                }}
+                onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#0b8043'}
+                onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#0F9D58'}
+            >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                </svg>
+                Call Now
+            </a>
+
+            <span style={{
+                fontSize: '12px',
+                fontWeight: '600',
+                padding: '4px 10px',
+                borderRadius: '12px',
+                backgroundColor: isOpen ? '#E6F4EA' : '#FCE8E6',
+                color: isOpen ? '#137333' : '#C5221F',
+                border: `1px solid ${isOpen ? '#CEEAD6' : '#FAD2CF'}`
+            }}>
+                {isOpen ? '● Open Now' : '○ Closed Now'}
+            </span>
+        </div>
+    );
+}
+
+/**
+ * Native Share Merchant Button Component (Web Share API with Clipboard Copy Fallback)
+ */
+export function ShareMerchantButton({ storeName = '', title = '', url = window.location.href }) {
+    const [copied, setCopied] = React.useState(false);
+
+    const handleShare = async () => {
+        const shareData = {
+            title: title || storeName || 'Adilabad App Listing',
+            text: `Check out ${storeName || 'this store'} on Adilabad App!`,
+            url: url
+        };
+
+        if (navigator.share) {
+            try {
+                await navigator.share(shareData);
+            } catch (err) {
+                if (err.name !== 'AbortError') {
+                    console.error('Error sharing:', err);
+                }
+            }
+        } else {
+            try {
+                await navigator.clipboard.writeText(url);
+                setCopied(true);
+                setTimeout(() => setCopied(false), 2500);
+            } catch (err) {
+                console.error('Clipboard copy failed:', err);
+            }
+        }
+    };
+
+    return (
+        <button
+            onClick={handleShare}
+            type="button"
+            className="btn-share"
+            style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                backgroundColor: '#673AB7',
+                color: '#FFFFFF',
+                padding: '8px 16px',
+                borderRadius: '20px',
+                fontWeight: '600',
+                fontSize: '14px',
+                border: 'none',
+                boxShadow: '0 2px 6px rgba(103, 58, 183, 0.3)',
+                transition: 'transform 0.2s ease, background-color 0.2s ease',
+                cursor: 'pointer'
+            }}
+            onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#512DA8'}
+            onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#673AB7'}
+        >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
+            </svg>
+            {copied ? 'Link Copied! ✓' : 'Share'}
+        </button>
+    );
+}
+
+/**
+ * Verified Merchant & Dynamic Rating Star Badge Component
+ */
+export function VerifiedMerchantBadge({ isVerified = true, rating = 4.5, totalReviews = 0 }) {
+    return (
+        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+            {isVerified && (
+                <span style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '4px',
+                    backgroundColor: '#E8F0FE',
+                    color: '#1A73E8',
+                    padding: '4px 10px',
+                    borderRadius: '16px',
+                    fontSize: '12px',
+                    fontWeight: '700',
+                    border: '1px solid #D2E3FC'
+                }}>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#1A73E8">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                    Verified Business
+                </span>
+            )}
+
+            {rating > 0 && (
+                <span style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '4px',
+                    backgroundColor: '#FEF7E0',
+                    color: '#B06000',
+                    padding: '4px 10px',
+                    borderRadius: '16px',
+                    fontSize: '12px',
+                    fontWeight: '700',
+                    border: '1px solid #FCE8E6'
+                }}>
+                    ★ {Number(rating).toFixed(1)}
+                    {totalReviews > 0 && <span style={{ opacity: 0.8, fontWeight: '500' }}>({totalReviews})</span>}
+                </span>
+            )}
+        </div>
+    );
+}
+
