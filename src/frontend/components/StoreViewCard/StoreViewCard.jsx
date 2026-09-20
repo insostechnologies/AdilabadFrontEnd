@@ -8,6 +8,8 @@ import location from "../Assets/Images/location.png";
 import { config } from '../../../config';
 import { leadsAdd } from '../../../utils/apiCall'; // Import leadsAdd function
 
+import { WhatsAppChatButton, GoogleMapsDirectionsButton, ShareMerchantButton } from '../../../components/MerchantEnrichments';
+
 const StoreViewCard = ({ store, saved, categoryId }) => {
     const navigate = useNavigate();
     const user = JSON.parse(localStorage.getItem('user'));
@@ -162,6 +164,11 @@ const StoreViewCard = ({ store, saved, categoryId }) => {
                         {store.product_count > 0 && (
                             <span className="offer-products">🛒 {store.product_count} Products Available</span>
                         )}
+                    </div>
+                    <div className="store-enrichments-action-bar" onClick={(e) => e.stopPropagation()} style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', margin: '10px 0' }}>
+                        {store.phone && <WhatsAppChatButton phone={store.phone} storeName={store.name} />}
+                        <GoogleMapsDirectionsButton address={store.address?.area} city={store.address?.city} storeName={store.name} latitude={store.lat} longitude={store.lng} />
+                        <ShareMerchantButton storeName={store.name} />
                     </div>
                     <button onClick={handleButtonClick} className="view-details-btn">
                         View Details
